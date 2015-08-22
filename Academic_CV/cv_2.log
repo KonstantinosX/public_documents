@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  22 AUG 2015 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  22 AUG 2015 12:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -263,7 +263,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  29i,8n,21p,436b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_2.pdf (2 pages, 113903 bytes).
+Output written on cv_2.pdf (2 pages, 113893 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
