@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks   = true
+     }
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Konstantinos Xirogiannopoulos} % Your name at the top
+
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+
+\moveleft.5\hoffset\centerline{3226 A.V. Williams Bldg} % Your address
+\moveleft.5\hoffset\centerline{College Park, MD 20740}
+\moveleft.5\hoffset\centerline{kostasx@cs.umd.edu}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{INTERESTS}
+
+I am interested in database systems, big data management, large-scale data analytics and distributed systems
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+{\sl \textbf{PhD. in Computer Science},}  \hfill \textbf{August 2014 - currently} \\
+University of Maryland, College Park\\
+\textit{Advisor:} Prof. Amol Deshpande
+
+{\sl \textbf{BSc. in Computer Science},}  \hfill \textbf{Sept. 2009 - Jan. 2014} \\
+\textit{Ranked in the top 7.5\% of graduates in past five years}
+Athens University of Economics and Business\\
+
+%----------------------------------------------------------------------------------------
+%	Technology SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{HONORS \& AWARDS}
+
+\begin{itemize}
+  \item Honorary Scholarship and Award for Academic and Moral distinction on first year (2009-10)
+ \textit{(State Scholarships Foundation)}\\
+ (Ranked \#1 / 240)
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{RESEARCH EXPERIENCE}
+
+{\sl \textbf{Graduate Research Assistant}} \hfill \textbf{Summer 2015} \\
+\textit{University of Maryland, College Park} \href{http://www.cs.umd.edu/~amol/DBGroup/pubs.html}{Databases Lab}\\
+\textit{Advisor}: Prof. Amol Deshpande\\
+Full-time Graduate Research Assistantship working on the followup research paper
+for the \textit{GraphGen} Project.\\
+\\
+{\sl Large-Scale Graph Extraction from Relational Datasets}\\
+\begin{itemize}
+  \item GraphGen: Efficiently and intuitively extracting graphs from relational data using a custom Domain Specific Language based on Datalog. This allows users to conduct in-memory large-scale graph analytics on their relational datasets without the need for migrating to a native graph database
+\end{itemize}
+
+{\sl \textbf{Undergraduate Researcher}} \hfill \textbf{Oct. 2012 - Sept. 2013}\\
+\textit{Athens University of Economics and Business}\\
+\textit{Thesis Title}:
+\href{https://drive.google.com/open?id=0B20MIwp_I7FlVFlNVWtQb3VXTmM}{``Graph Databases and Big Data : Study, Overview of Existing Systems, and Sub-Graph Matching Queries Algorithm Implementation using Apache Hama Graph-Parallel Processing Framework"}\\
+\textit{Supervisor}: Prof. Yannis Kotidis
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{PUBLICATIONS }
+
+{\sl \textbf{Conference Publications} }\\
+\begin{itemize}
+  \item Konstantinos Xirogiannopoulos, Udayan Khurana, Amol Deshpande\\
+  \href{http://www.vldb.org/pvldb/vol8/p2032-xirogiannopoulos.pdf}{GraphGen: Exploring Interesting Graphs in Relational Data}\\
+  \textit{VLDB 2015 Demo}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	INDUSTRY EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{INDUSTRIAL EXPERIENCE}
+
+{\sl \textbf{Back-End Sofware Engineer Intern} } \hfill \textbf{March 2014 - June 2014}\\
+\textit{Asuum GmbH based in Berlin, Germany}\\
+Developed for asynchronous inter-server communication, data management, data analysis and web application back-end maintenance.\\
+\textit{Technical Skills}: Java, Hadoop, Map-Reduce, MongoDB, ElasticSearch, Jenkins
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{TEACHING \& MENTORING}
+
+{\sl \textbf{Graduate Teaching Assistant (Teaching)}} \hfill \textbf{Sept. 2014 - Dec. 2014}\\
+\textit{Course}: CMSC132: Object Oriented Programming II \\
+\textit{Instructor}: Larry Herman\\
+Conducted four 1-hour long discussion sections per week (approx. 35 students per section) and held 4-hours of office-hours every week for answering questions. These discussion sections included explaining concepts, doing worksheets, assigning and grading quizzes. Graded quizzes and actively participated in grading of midterms and final exams.
+
+
+
+%----------------------------------------------------------------------------------------
+%	COURSES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{RECENT COURSES}
+
+{\sl \textbf{CMSC818:Distributed and Cloud Based File Systems}} \hfill \textbf{Sept. 2014 - Dec. 2014}\\
+\textit{Instructor}: Prof. Peter Keleher\\
+\textit{Built Distributed Fault Tolerant, Durable File System from Scratch}: Starting from a simple in- memory file system, made it persistent, and later applied and implemented distributed file systems concepts like versioning, replication and distributed consensus (Raft) and developed a fully functional, large-scale distributed file system with many guarantees. All development done in \textit{Go} (``A").
+
+{\sl \textbf{CMSC723:Computational Linguistics I}} \hfill \textbf{Sept. 2014 - Dec. 2014}\\
+\textit{Instructor}: Prof. Hal Daume III\\
+\textit{Automatic Quiz-bowl Question Answering}: Built a classifier that classified text quiz-bowl questions to their correct answers in an automatic way. Text processing done in \textit{Python} (``A+").
+
+{\sl \textbf{CMSC 724: Database Management Systems}} \hfill \textbf{Feb. 2015 - May. 2015}\\
+\textit{Instructor}: Prof. Amol Deshpande\\
+\begin{itemize}
+  \item \href{https://drive.google.com/open?id=0B20MIwp_I7FlUGhyVmFYcjFuYmM}{Graph-Based Machine Learning on Relational Data} (``A+").
+\end{itemize}
+
+{\sl \textbf{CMSC 734: Information Visualization}} \hfill \textbf{Feb. 2015 - May. 2015}\\
+\textit{Instructor}: Prof. Ben Schneiderman\\
+\begin{itemize}
+  \item Konstantinos Xirogiannopoulos, Myco Paulo, Zheng Xu, Deok Gun Park\\
+  \href{https://wiki.cs.umd.edu/cmsc734_s15/images/f/fc/TimeGrouper_FinalReport.pdf}{TimeGrouper: Visualizing Time Series Clustering Towards the Identification of the Contributing Factors to the Global Decay Rate of Vulnerabilities} (``A")
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{HOBBIES \& INTERESTS}
+
+\textit{Music} (Electric \& Acoustic Guitar), \textit{Sports} (Basketball [participation in town tournaments] , Swimming, Skiing), \textit{Leisure} (Fishing, Cinema, Android OS Enthusiast, Rubik’s Speedcubing [national contest participation])
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}
