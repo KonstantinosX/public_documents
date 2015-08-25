@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1440523131 "kostas_xirog_cv.tex" "kostas_xirog_cv.pdf" "kostas_xirog_cv" 1440523132
+["pdflatex"] 1440524976 "kostas_xirog_cv.tex" "kostas_xirog_cv.pdf" "kostas_xirog_cv" 1440524976
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -41,7 +41,7 @@
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1401025990 3832012 904d82bdcc8abf2b1cd296990b82553b ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "kostas_xirog_cv.aux" 1440521175 8 a94a2480d3289e625eea47cd1b285758 ""
-  "kostas_xirog_cv.tex" 1440523129 9405 622ea1ec91129f4bb5d574bb5730b923 ""
+  "kostas_xirog_cv.tex" 1440524974 9379 eec152492920cff36d2e852d6bc729d5 ""
   "res.cls" 1440170684 25064 12b8a9e558b35c7e7f7f5fb39bebb9a2 ""
   (generated)
   "kostas_xirog_cv.log"
