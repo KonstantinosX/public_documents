@@ -2,8 +2,8 @@ PWD /Users/kostasx/Documents/public_documents/Academic_CV
 INPUT /usr/local/texlive/2014/texmf.cnf
 INPUT /usr/local/texlive/2014/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT cv_2.tex
-OUTPUT cv_2.log
+INPUT kostas_xirog_cv.tex
+OUTPUT kostas_xirog_cv.log
 INPUT res.cls
 INPUT res.cls
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
@@ -37,8 +37,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-INPUT cv_2.aux
-INPUT cv_2.aux
+INPUT kostas_xirog_cv.aux
+INPUT kostas_xirog_cv.aux
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -51,7 +51,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-OUTPUT cv_2.pdf
+OUTPUT kostas_xirog_cv.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
