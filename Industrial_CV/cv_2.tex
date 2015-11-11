@@ -24,7 +24,14 @@
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+% \usepackage{hyperref}
+\usepackage{color}
+
 \usepackage{hyperref}
+\hypersetup{
+  colorlinks,
+  citecolor=Violet,
+  linkcolor=Red}
 
 \setlength{\textwidth}{5.1in} % Text width of the document
 
@@ -40,7 +47,6 @@
 
 \moveleft.5\hoffset\centerline{3226 A.V. Williams Bldg} % Your address
 \moveleft.5\hoffset\centerline{College Park, MD 20740}
-\moveleft.5\hoffset\centerline{(xxx) xxxx-xxx}
 \moveleft.5\hoffset\centerline{\href{mailto:kostasx@cs.umd.edu}{kostasx@cs.umd.edu}}
 
 %----------------------------------------------------------------------------------------
@@ -53,7 +59,7 @@
 
 \section{INTERESTS}
 
-I am interested in database systems, big data management, large-scale analytics and distributed systems
+I am interested in database systems, data management, large-scale analytics and distributed systems.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -61,13 +67,12 @@ I am interested in database systems, big data management, large-scale analytics 
 
 \section{EDUCATION}
 
-{\sl PhD. in Computer Science,}  \hfill August 2014 - current \\
-University of Maryland, College Park\\
+{\sl \textbf{Ph.D. in Computer Science},}  \hfill \textbf{August 2014 -- present} \\
+University of Maryland, College Park,  \textit{MD, USA}\\
 
-{\sl BSc. in Computer Science,}  \hfill September 2009 - January 2014 \\
-Bachelor of Science in Computer Science,\\
-\textit{Ranked in the top 7.5\% of graduates in past five years)}
-Athens University of Economics and Business\\
+{\sl \textbf{B.Sc. in Computer Science},}  \hfill \textbf{September 2009 -- January 2014} \\
+Athens University of Economics and Business, \textit{Athens Greece}\\
+\textit{Ranked in the top 7.5\% of graduates in past five years}\\
 % {\sl PhD. in Computer Science,}  \hfill August 2014 - August 2015 \\
 % Athens University of Economics and Business, Athens, Greece\\
 
@@ -75,61 +80,132 @@ Athens University of Economics and Business\\
 %	Technology SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{TECHNOLOGY \\ SKILLS}
+\section{TECHNICAL \\ SKILLS}
 
-{\sl Programming Languages:} Python, Java, C\#, JavaScript, C, C++. \\
-{\sl Web Backend Technologies:} Django, Django REST Framework, Mongo, MongoEngine, PostgreSQL, MySQL, Mandrill, AmazonS3, Heroku. \\
-{\sl Web Frontend Technologies:} AngularJS, JQuery, JQueryMobile, Bootstrap, Firebase. \\
-{\sl Software Engineering:} Agile, Scrum, Version control, Requirements analysis. \\
-{\sl Software:} Atlassian Suite, Vagrant, Git, Vim, VirtualEnv, VirtualBox, Ansible, Gulp. \\
+{\sl Programming Languages:} Java, Go, Python, JavaScript, C. \\
+{\sl Operating Systems:} Mac OS X, Windows, Ubuntu.\\
+{\sl Back-end Technologies:} PostgreSQL, MySQL, MongoDB, ElasticSearch. \\
+{\sl Web Front-end Technologies:} Bootstrap, JQuery, D3. \\
+{\sl Data Analysis Technologies:} Hadoop, Hama, Giraph, Spark.\\
+{\sl Software:} Git, Scikit-Learn, Heroku, Jenkins. \\
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{RESEARCH EXPERIENCE}
+
+{\sl \textbf{Graduate Research Assistant}} \hfill \textbf{June 2015 -- present} \\
+University of Maryland, College Park \href{http://www.cs.umd.edu/~amol/DBGroup/pubs.html}{Databases Lab}\\
+\textit{Advisor}: Prof. Amol Deshpande\\
+{\sl Graph Extraction from Relational Datasets}\\
+  Efficiently and intuitively extracting graphs from relational data using a custom Domain Specific Language based on Datalog. Allows users to conduct in-memory large-scale graph analytics on their relational datasets without the need for complex ETL or migrating to a native graph database.\href{http://konstantinosx.github.io/graphgen-project/}{\textit{ [Project Webpage]}}
+
+{\sl \textbf{Undergraduate Researcher}} \hfill \textbf{Oct. 2012 -- Sept. 2013}\\
+Athens University of Economics and Business\\
+\textit{Thesis Title}:
+\href{https://drive.google.com/open?id=0B20MIwp_I7FlVFlNVWtQb3VXTmM}{``Graph Databases and Big Data : Study, Overview of Existing Systems, and Sub-Graph Pattern Matching Implementation using Apache Hama"}\\
+\textit{Supervisor}: Prof. Yannis Kotidis
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{PUBLICATIONS }
+
+\begin{itemize}
+   \item Konstantinos Xirogiannopoulos, Udayan Khurana, Amol Deshpande\\
+  \href{http://www.vldb.org/pvldb/vol8/p2032-xirogiannopoulos.pdf}{GraphGen: Exploring Interesting Graphs in Relational Data} \textit{[\href{https://www.youtube.com/watch?v=GDVBLv-oedQ}{video}]}\\
+  \textit{VLDB 2015, Demonstrations Track}
+  \item Konstantinos Xirogiannopoulos, Amol Deshpande\\
+  Efficient Graph Analytics over Relational Datasets\\
+  \textit{ SIGMOD 2016, Research Paper Track} \textit{ [Pending Submission]}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	HONORS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{HONORS \& AWARDS}
+
+% \begin{itemize}
+   Dean's Fellowship \\
+  \textit{University of Maryland, College Park}\\
+  \\
+   Honorary Scholarship and Award for Academic and Moral Distinction in first year at AUEB (2009-2010)
+ \textit{State Scholarships Foundation IKY} {\sl \textbf{(Ranked \#1 / 240)}}
+% \end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{EXPERIENCE}
+\section{PROFESSIONAL EXPERIENCE}
 
-{\sl Owner} \hfill November 2013 - Present \\
-E \& F Technologies, Kennesaw, GA
-\begin{itemize}
-\item Created a business that develops software to assess and maintain risk at large events for Greek organizations.
-\item Developed software written in Python, JavaScript, HTML5, and CSS.
-\end{itemize}
+{\sl \textbf{Back-End Sofware Engineer Intern} } \hfill \textbf{March 2014 -- June 2014}\\
+\textit{\href{http://www.asuum.com/products/}{Asuum GmbH} based in Berlin, Germany}\\
+Developed for asynchronous inter-server communication, data management, data analysis and web application back-end maintenance. Used \textit{minhashing} techniques to deal with duplicate news articles from publishers on the \textit{Asuum Bounce} project.\\
+\textit{Skills}: \textbf{\textit{Java, Hadoop (MapReduce), MongoDB, ElasticSearch, Jenkins}}
 
-{\sl Software Engineer} \hfill August 2013 - Present \\
-Georgia Tech Research Institute, Electronic Systems Laboratory, Atlanta, GA
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Designed and Developed Django/AngularJS software systems for the Department of Defense, Army, and Navy.
-\item Presented software demos to Department of Defense derived clients.
-\end{itemize}
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-{\sl Independent Software Contractor} \hfill May 2014 - September 2014\\
-JTE Technologies, Kennesaw, GA
-\begin{itemize}
-\item Performed the full software development process with the end result of deploying a large scale software system that manages access to high priority physical and logical assets.
-\item Designed the architecture for a Django/AngularJS software system.
-\end{itemize}
+\section{TEACHING \& MENTORING}
+
+{\sl \textbf{Graduate Teaching Assistant}} \hfill \textbf{Sept. 2014 -- Dec. 2014}\\
+\textit{Course}: CMSC132: Object Oriented Programming II \\
+\textit{Instructor}: Mr. Larry Herman\\
+Object Oriented Programming concepts, best practices, unit testing, basic data structures, graph algorithms, multi-threading and concurrency concepts (all taught in \textbf{Java}). Conducted four 1-hour long discussion sections/week (approx. 35 students/section) and held 4-hours of office-hours every week for answering questions. Graded quizzes, midterms and final exams, in collaboration with other Teaching Assistants.
 
 
 %----------------------------------------------------------------------------------------
-%	COMMUNITY SERVICE SECTION
+%	SELECTED SECTION
 %----------------------------------------------------------------------------------------
 
-\section{COMMUNITY \\ SERVICE}
+\section{SELECTED COURSES \& PROJECTS}
 
-Kennesaw Mountain Trail Club, {\sl Volunteer} \hfill February 2014 - Present \\
-Race Against Violence, {\sl Volunteer} \hfill October 2012 - Present \\
+{\sl \textbf{Distributed \& Cloud Based File Systems}} \hfill \textbf{Sept. 2014 -- Dec. 2014}\\
+\textit{Instructor}: Prof. Peter Keleher
+\begin{itemize}
+  \item \textit{Built Distributed, Fault Tolerant, Durable File System from Scratch}: Starting from a simple in-memory file system implementation, made it persistent to disk, and implemented distributed file systems concepts like file versioning, replication and distributed consensus (Raft) towards a fully functional, distributed file system with the above guarantees. All development done in \textbf{\textit{Go}} (A).
+\end{itemize}
+
+
+{\sl \textbf{Computational Linguistics I}} \hfill \textbf{Sept. 2014 -- Dec. 2014}\\
+\textit{Instructor}: Prof. Hal Daume III
+\begin{itemize}
+  \item
+  Konstantinos Xirogiannopoulos, Kasia Hitczenko\\
+  \textit{Built a multi-class classifier}: Classifying quizbowl question text to their correct answers in an automatic way using various training sets.\\ \textit{Skills}: \textbf{\textit{Python, Scikit-Learn, Nltk}} (A+).
+\end{itemize}
+
+{\sl \textbf{Database Management Systems}} \hfill \textbf{Feb. 2015 -- May. 2015}\\
+\textit{Instructor}: Prof. Amol Deshpande
+\begin{itemize}
+  \item Konstantinos Xirogiannopoulos, Benjamin Bengfort\\
+  \href{https://drive.google.com/open?id=0B20MIwp_I7FlUGhyVmFYcjFuYmM}{Graph-Based Machine Learning on Relational Data} (A+).
+\end{itemize}
+
+{\sl \textbf{Information Visualization}} \hfill \textbf{Feb. 2015 -- May. 2015}\\
+\textit{Instructor}: Prof. Ben Schneiderman
+\begin{itemize}
+  \item Konstantinos Xirogiannopoulos, Myco Paulo, Zheng Xu, Deok Gun Park\\
+  \href{https://wiki.cs.umd.edu/cmsc734_s15/images/f/fc/TimeGrouper_FinalReport.pdf}{TimeGrouper: Visualizing Time Series Clustering Towards Studying the Global Decay Rate of Vulnerabilities}  \textit{[\href{https://www.youtube.com/watch?v=oDgl6pp1CVU}{video demo}]}\\
+  \textit{Implemented and deployed RESTful service} (Python/Flask) that applied clustering techniques to time series data on the fly, formatted and returned results to front-end application.  \textit{Skills}: \textbf{\textit{Python, Scikit-Learn, Flask, Heroku}} (A)
+\end{itemize}
+
 
 %----------------------------------------------------------------------------------------
 %	EXTRA-CURRICULAR ACTIVITIES SECTION
 %----------------------------------------------------------------------------------------
 
-\section{EXTRA-CURRICULAR \\ ACTIVITIES}
+\section{HOBBIES \& INTERESTS}
 
-Kappa Sigma Fraternity, {\sl President} \hfill August 2014 - Present\\
-Kappa Sigma Fraternity, {\sl Treasurer} \hfill December 2013 - August 2014 \\
-Technology Student Association, {\sl Team Leader} \hfill August 2011 - May 2012 \\
-
+\textbf{Music}: Electric \& Acoustic Guitar, \textbf{Sports}: Basketball, Swimming, Skiing, \textbf{Leisure}: Fishing, Cinema, Rubiks Speedcubing
 
 %----------------------------------------------------------------------------------------
 
