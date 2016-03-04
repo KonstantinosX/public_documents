@@ -1,7 +1,0 @@
-# Ignore latex compilation files
-
-.aux
-.fls
-.log
-.gz
-.fdb_latexmk
