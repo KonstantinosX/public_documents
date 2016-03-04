@@ -1,0 +1,4 @@
+#Ignore latex build files
+*.log
+*synctex.gz
+*_latexmk
