@@ -1,0 +1,9 @@
+#Ignore latex build files
+*.log
+*synctex.gz
+*_latexmk
+*.aux
+*.fls
+*.bbl
+*.blg
+.DS_Store
