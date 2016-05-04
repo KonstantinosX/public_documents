@@ -142,7 +142,7 @@ We propose partitioning this \texttt{Genotype} table by \texttt{individual\_id} 
     % \vspace{-10pt}
 \end{figure}
 
-As mentioned, common queries would include finding the number of common genotypes between two individuals by using SQL; the following query will return how many variants Konstantinos Xirogiannopoulos has in common with Michael Jordan:
+As mentioned, common queries would include finding the number of common genotypes between two individuals by using SQL; the following query will return how many variants a user named ``John Doe" has in common with Michael Jordan:
 \begin{lstlisting}
 With MJ as (Select G.class, G.vId
 From Genotype G
@@ -151,20 +151,19 @@ Individuals I where name='Michael Jordan'))
 Select Count(G.Vid) as common-variants
 From Genotype G, MJ
 Where G.Individual_Id = (Select I.id from
-Individuals I where name='Konstantinos
-Xirogiannopoulos') and
+Individuals I where name='John Doe') and
 G.vId = MJ.vId and G.class = MJ.class
 \end{lstlisting}
 Note that the similarity check does not necessarily have to be done in the database. Applications could simply query for the genotypes of these individuals and conduct their own analysis tailored to their purpose.
 
 Because this is a write-once, read-many architecture, there are no issues of maintaining consistency in this context, since the genotype data is \textit{static}. Consistency would have been an issue if there were also a large number of incoming updates to the genome data, however in this case we have no updates to the genotypes that may interfere with the queries made by the applications since an individual’s variant data does not change once identified and inserted into the database.
 
-Considering that there could potentially be as many as $100,000,000$ variants in the entire human genome, if we were to maintain the genotypes for as many as $1,000,000$ individuals, and store say $8$ bits per individual-variant pair (to account for multiple alleles, or complex structural variants), that would require $8*10^14$ bits, or $100$ Terabytes, before applying any standard compression techniques native in many database systems. We obviously don't have this volume of data available yet, but is steadily flowing in as more genomes are sequenced. Disk storage is also increasingly becoming more inexpensive, and it is not unusual for machines to have a few Terabytes of storage. By using a distributed architecture like the one proposed it is therefore apparent that a system like this is \textit{horizontally scalable}. Increase in data volume to extents much higher than this can be dealt with by simply throwing more machines at the problem.
+Considering that there could potentially be as many as $100,000,000$ variants in the entire human genome, if we were to maintain the genotypes for as many as $1,000,000$ individuals, and store say $8$ bits per individual-variant pair (to account for multiple alleles, or complex structural variants), that would require $8*10^{14}$ bits, or $100$ Terabytes, before applying any standard compression techniques native in many database systems. We obviously don't have this volume of data available yet, but is steadily flowing in as more genomes are sequenced. Disk storage is also increasingly becoming more inexpensive, and it is not unusual for machines to have a few Terabytes of storage. By using a distributed architecture like the one proposed it is therefore apparent that a system like this is \textit{horizontally scalable}. Increase in data volume to extents much higher than this can be dealt with by simply throwing more machines at the problem.
 
 % Therefore causality of updates is also not an issue in such a context due to the mostly static nature of genome data.
 
 \section{Conclusion and Future Directions}
-There are of course many more things to take into account like the actual rate at which queries are expected to hit this database, how we could incorporate biometric data into the equation, what interesting queries can be made by doing so and what potential problems arise in these cases. Moreover there could also be security as well as data ethics issues associated with the DNA App store as data anonymization is definitelly non trivial and there may be interest in users’ genome data being completely anonymous but also that some of their phenotypes are concealed. It is difficult to pinpoint whether these will be real issues or to estimate their magnitude in regards to the users as well as the infrastructure. Another future direction is incorporating more complex structural variants inside this database in ways that would enable combining these datasets with the rest of the data in the database (probably using SQL), towards potentially more insightful analytics.
+There are of course many more things to take into account like the actual rate at which queries are expected to hit this database, how we could incorporate biometric data into the equation, what interesting queries can be made by doing so and what potential problems arise in these cases. Moreover there could also be security as well as data ethics issues associated with the DNA App store as data anonymization is definitely non trivial and there may be interest in users’ genome data being completely anonymous but also that some of their phenotypes are concealed. It is difficult to pinpoint whether these will be real issues or to estimate their magnitude in regards to the users as well as the infrastructure. Another future direction is incorporating more complex structural variants inside this database in ways that would enable combining these datasets with the rest of the data in the database (probably using SQL), towards potentially more insightful analytics.
 
 We have proposed a database schema and architecture that would allow for structured queries of a large and extensible unified database system that we believe is a practical first step towards organizing the back-end for the vision of the DNA App store. We believe that allowing for SQL support over structured datasets would allow for the realization of this vision as it would allow a standard, structured way of accessing and merging genomics data for complex analysis.
 
